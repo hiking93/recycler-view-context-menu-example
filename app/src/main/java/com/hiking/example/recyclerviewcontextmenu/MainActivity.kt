@@ -1,4 +1,4 @@
-package com.hiking.playground
+package com.hiking.example.recyclerviewcontextmenu
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

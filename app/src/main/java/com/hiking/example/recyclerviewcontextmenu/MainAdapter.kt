@@ -1,4 +1,4 @@
-package com.hiking.playground
+package com.hiking.example.recyclerviewcontextmenu
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView

@@ -1,4 +1,4 @@
-package com.hiking.playground
+package com.hiking.example.recyclerviewcontextmenu
 
 data class SampleData(val title: String, val content: String) {
 
