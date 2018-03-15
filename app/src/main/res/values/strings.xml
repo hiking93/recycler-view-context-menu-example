@@ -1,0 +1,10 @@
+<resources>
+	<string name="app_name">Hiking Playground</string>
+	<string name="title_format">Title %d</string>
+	<string name="content_format">Content %d</string>
+	<string name="clicked_format">You selected %s at position %d, and the item data is %s.</string>
+
+	<string name="menu_title">Menu title</string>
+	<string name="menu_item_1">Option 1</string>
+	<string name="menu_item_2">Option 2</string>
+</resources>
