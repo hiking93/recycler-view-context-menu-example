@@ -24,11 +24,20 @@ class ContextMenuRecyclerView : RecyclerView {
 
     override fun getContextMenuInfo() = contextMenuInfo
 
+    override fun showContextMenuForChild(originalView: View): Boolean {
+        saveContextMenuInfo(originalView)
+        return super.showContextMenuForChild(originalView)
+    }
+
     override fun showContextMenuForChild(originalView: View, x: Float, y: Float): Boolean {
+        saveContextMenuInfo(originalView)
+        return super.showContextMenuForChild(originalView, x, y)
+    }
+
+    private fun saveContextMenuInfo(originalView: View) {
         val position = getChildAdapterPosition(originalView)
         val longId = getChildItemId(originalView)
         contextMenuInfo = ContextMenuInfo(this, originalView, position, longId)
-        return super.showContextMenuForChild(originalView, x, y)
     }
 
     class ContextMenuInfo(
